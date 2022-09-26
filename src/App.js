@@ -1,6 +1,6 @@
 import React, { Suspense } from "react";
 import './App.css';
-import {BrowserRouter, Route, Routes} from "react-router-dom";
+import {HashRouter, Route, Routes} from "react-router-dom";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import Navbar from "./components/Navbar/Navbar";
@@ -53,11 +53,11 @@ const AppContainer = connect(mapStateToProps, {initializeApp})(App);
 
 const SocialNetworkApp = () => {
     return (
-        <BrowserRouter>
+        <HashRouter>
             <Provider store={store}>
                 <AppContainer />
             </Provider>
-        </BrowserRouter>
+        </HashRouter>
     )
 }
 

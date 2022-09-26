@@ -1,4 +1,4 @@
-import {applyMiddleware, combineReducers, compose, legacy_createStore} from "redux";
+import {applyMiddleware, combineReducers, legacy_createStore} from "redux";
 import authReducer from "./reducers/authReducer";
 import thunkMiddleware from "redux-thunk";
 import appReducer from "./reducers/appReducer";
@@ -15,10 +15,6 @@ const reducers = combineReducers({
     users: usersReducer,
 });
 
-const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
-const store = legacy_createStore(reducers, /* preloadedState, */ composeEnhancers(
-    applyMiddleware(thunkMiddleware)
-));
+const store = legacy_createStore(reducers, applyMiddleware(thunkMiddleware));
 
-window.store = store;
 export default store;
