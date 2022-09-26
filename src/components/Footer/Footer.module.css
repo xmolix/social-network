@@ -1,0 +1,14 @@
+.footer {
+    display: flex;
+    justify-content: end;
+    background-color: rgba(211, 211, 211, 0.5);
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 3px 0 5px;
+}
+
+.copy {
+    font-size: 20px;
+    font-weight: bold;
+}

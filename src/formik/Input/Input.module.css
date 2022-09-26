@@ -1,0 +1,35 @@
+input {
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: all 1s ease;
+    outline: none;
+    width: 98%;
+}
+
+input:focus {
+    border: 2px solid gray;
+}
+
+.input_error {
+    background-color: rgba(240, 128, 128, 0.4);
+    border: 2px solid red;
+}
+
+.input_error:focus {
+    border: 2px solid red;
+}
+
+.error {
+    display: flex;
+    justify-content: end;
+    align-items: start;
+    color: red;
+    font-size: 18px;
+    font-weight: bold;
+    pointer-events: none;
+    position: absolute;
+    top: -30px;
+    height: 100%;
+    width: 100%;
+}

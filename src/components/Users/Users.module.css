@@ -1,0 +1,138 @@
+.user {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 3px;
+}
+
+.user_link {
+    color: black;
+    text-decoration: none;
+}
+
+.user_container {
+    padding: 0 5px 3px;
+    transition: all .3s ease;
+}
+
+.user_container:hover {
+    background-color: whitesmoke;
+    box-shadow: inset 0 0 10px black;
+}
+
+.user_name {
+    background: linear-gradient(3deg, lightgray 30%, white 80%);
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    border-radius: 0 0 0 100px;
+    box-shadow: 1px 1px 5px black;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-shadow: 0 0 3px black;
+    padding: 0 0 5px 17px;
+    width: 100%;
+}
+
+.user_contents {
+    display: flex;
+    justify-content: space-between;
+    margin: 13px 0 7px;
+}
+
+.content_one {
+    display: flex;
+    align-items: center;
+}
+
+.user_status {
+    font-size: 16px;
+    font-style: italic;
+    margin-left: 15px;
+}
+
+.content_two {
+    display: flex;
+    align-items: end;
+}
+
+.location {
+    font-size: 16px;
+    font-style: italic;
+    margin-right: 5px;
+}
+
+.followed_btn {
+    border: none;
+    box-shadow: 0 0 10px black;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all .3s ease;
+    height: 30px;
+    width: 100%;
+}
+
+.followed_btn:hover {
+    box-shadow: 0 0 3px black;
+}
+
+.followed_btn:active {
+    background-color: lightgray;
+    box-shadow: 0 0 3px black,
+        inset 0 0 3px black;
+}
+
+.followed_btn:disabled {
+    background-color: lightgray;
+    box-shadow: 0 0 3px black,
+        inset 0 0 3px black;
+    cursor: progress;
+}
+
+.follow {
+    background-color: lightgreen;
+}
+
+.unfollow {
+    background-color: lightcoral;
+}
+
+.follow:before {
+    content: "FOLLOW";
+}
+
+.unfollow:before {
+    content: "UNFOLLOW";
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin: 15px 0 15px;
+}
+
+.pagination_btn {
+    background-color: lightgreen;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all .3s ease;
+    margin: 0 1px;
+}
+
+.pagination_btn:hover {
+    background-color: lightyellow;
+}
+
+.pagination_btn:active {
+    background-color: lightgray;
+}
+
+.active_page {
+    background-color: lightcoral;
+}
