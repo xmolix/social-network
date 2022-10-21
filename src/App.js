@@ -53,7 +53,7 @@ const AppContainer = connect(mapStateToProps, {initializeApp})(App);
 
 const SocialNetworkApp = () => {
     return (
-        <HashRouter basename={process.env.PUBLIC_URL}>
+        <HashRouter>
             <Provider store={store}>
                 <AppContainer />
             </Provider>
