@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="16e46b1c-4f71-46c4-853f-68f8f8ad21f2" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/reducers/profileReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducers/profileReducer.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -180,7 +179,7 @@
       <workItem from="1666260798043" duration="5436000" />
       <workItem from="1666276502461" duration="4513000" />
       <workItem from="1666335441382" duration="5732000" />
-      <workItem from="1666361092127" duration="9006000" />
+      <workItem from="1666361092127" duration="9393000" />
     </task>
     <servers />
   </component>

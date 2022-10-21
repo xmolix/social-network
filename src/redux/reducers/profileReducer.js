@@ -17,8 +17,6 @@ let initialState = {
     status: "",
 }
 
-console.log(initialState.posts[0].likesCount + 1);
-
 const profileReducer = (state = initialState, action) => {
     switch (action.type) {
         case ADD_POST:
