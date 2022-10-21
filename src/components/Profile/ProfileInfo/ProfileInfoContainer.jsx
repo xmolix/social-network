@@ -1,11 +1,16 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import {connect} from "react-redux";
 import {getAvatar, getPanorama} from "../../../redux/selectors/appSelector";
-import {getUserProfile, getUserStatus, updateStatus} from "../../../redux/reducers/profileReducer";
+import {
+    getUserProfile,
+    getUserStatus,
+    updateImage,
+    updateProfile,
+    updateStatus
+} from "../../../redux/reducers/profileReducer";
 import {compose} from "redux";
 import {useLocation, useNavigate, useParams} from "react-router-dom";
 import ProfileInfo from "./ProfileInfo";
-import {useEffect} from "react";
 import {getProfile, getStatus} from "../../../redux/selectors/profileSelector";
 import {getMyID} from "../../../redux/selectors/authSelector";
 import Loading from "../../commons/Loading/Loading";
@@ -59,7 +64,7 @@ const mapStateToProps = (state) => ({
 
 export default compose(
     connect(mapStateToProps, {
-        getUserProfile, getUserStatus, updateStatus
+        getUserProfile, getUserStatus, updateStatus, updateImage, updateProfile
     }),
     withRouter,
 )(ProfileInfoContainer);

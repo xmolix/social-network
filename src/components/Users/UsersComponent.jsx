@@ -14,6 +14,8 @@ import {getAvatar} from "../../redux/selectors/appSelector";
 import Loading from "../commons/Loading/Loading";
 
 const UsersComponent = (props) => {
+    document.title = "Social Network - Users";
+
     let [count, setCount] = useState([]);
 
     useEffect(() => {

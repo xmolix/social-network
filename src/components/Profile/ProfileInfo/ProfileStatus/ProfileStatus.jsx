@@ -11,7 +11,7 @@ const ProfileStatus = (props) => {
     }, [props.status]);
 
     const activateEditMode = () => {
-        if (props.userID === props.myID) {
+        if (props.isOwner) {
             setEditMode(true);
         }
     }
@@ -25,13 +25,16 @@ const ProfileStatus = (props) => {
         setStatus(e.target.value);
     }
 
-    const cursor = props.userID === props.myID ? classes.active_status : "";
+    const cursor = props.isOwner ? classes.active_status : "";
     const active = editMode === true ? classes.white : "";
+    const isOwnerStatus = props.isOwner ? classes.owner_status : classes.other_user_status;
 
     return (
-        <div className={`${classes.status} ${cursor} ${active}`}>
+        <div className={`${classes.status} ${isOwnerStatus} ${cursor} ${active}`}>
             {!editMode &&
-                <div className={classes.status_content} onDoubleClick={activateEditMode}>
+                <div className={classes.status_content}
+                     onDoubleClick={activateEditMode}
+                     title={props.isOwner ? "Double click to change status!" : null}>
                     <div><span>STATUS: </span>{props.status}</div>
                 </div>
             }

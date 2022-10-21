@@ -6,8 +6,9 @@ import {getFriends, getFriendsMessages, getMyMessages} from "../../redux/selecto
 import {getAvatar} from "../../redux/selectors/appSelector";
 import Messages from "./Messages";
 
-
 const MessagesContainer = (props) => {
+    document.title = "Social Network - Messages";
+
     return (
         <Messages {...props}/>
     )

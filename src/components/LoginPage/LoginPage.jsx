@@ -17,6 +17,7 @@ const LoginPage = ({initialValues, onSubmit, validationSchema, status}) => {
                         <Field id={"email"} name={"email"}
                                children={(props) => <Input type={"text"}
                                                            placeholder={"Enter the email..."}
+                                                           classError={"loginError"}
                                                            {...props}/>}
                         />
                     </div>
@@ -26,6 +27,7 @@ const LoginPage = ({initialValues, onSubmit, validationSchema, status}) => {
                         <Field id={"password"} name={"password"}
                                children={(props) => <Input type={"password"}
                                                            placeholder={"Enter the password..."}
+                                                           classError={"loginError"}
                                                            {...props}/>}
                         />
                     </div>

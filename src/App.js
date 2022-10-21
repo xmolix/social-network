@@ -1,6 +1,6 @@
 import React, { Suspense } from "react";
 import './App.css';
-import {HashRouter, Route, Routes} from "react-router-dom";
+import {BrowserRouter, HashRouter, Route, Routes} from "react-router-dom";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import Navbar from "./components/Navbar/Navbar";
@@ -43,7 +43,7 @@ const App = (props) => {
             <Footer/>
         </>
     );
-}
+};
 
 const mapStateToProps = (state) => ({
     initialize: getInitialize(state),
@@ -53,12 +53,12 @@ const AppContainer = connect(mapStateToProps, {initializeApp})(App);
 
 const SocialNetworkApp = () => {
     return (
-        <HashRouter>
+        <BrowserRouter>
             <Provider store={store}>
                 <AppContainer />
             </Provider>
-        </HashRouter>
-    )
-}
+        </BrowserRouter>
+    );
+};
 
 export default SocialNetworkApp;

@@ -7,6 +7,8 @@ import * as Yup from "yup";
 import LoginPage from "./LoginPage";
 
 const LoginPageContainer = (props) => {
+    document.title = "Social Network - Login";
+
     const initialValues = {
         email: "",
         password: "",

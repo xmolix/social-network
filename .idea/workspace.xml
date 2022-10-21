@@ -2,9 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="16e46b1c-4f71-46c4-853f-68f8f8ad21f2" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileData/ProfileContacts/ProfileContacts.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileData/ProfileData.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileData/ProfileDataForm.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileImage/ProfileImage.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/formik/Toggle/Toggle.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/formik/Toggle/Toggle.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/dislike.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/like.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/trash.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/store.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/LoginPage/LoginPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LoginPage/LoginPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/LoginPage/LoginPageContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LoginPage/LoginPageContainer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Messages/MessagesContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Messages/MessagesContainer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/Profile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/Profile.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/Profile.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/Profile.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileInfo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileInfo.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileInfoContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileInfoContainer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileStatus/ProfileStatus.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileStatus/ProfileStatus.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/ProfilePosts/ProfilePosts.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/ProfilePosts/ProfilePosts.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/ProfilePosts/ProfilePostsContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/ProfilePosts/ProfilePostsContainer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Users/UsersComponent.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Users/UsersComponent.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/formik/Input/Input.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/formik/Input/Input.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/formik/Input/Input.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/formik/Input/Input.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/formik/Textarea/Textarea.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/formik/Textarea/Textarea.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/formik/formik.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/formik/formik.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/reducers/profileReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducers/profileReducer.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,26 +69,34 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2Eoi7keL60TPgJwkzXZ03IPD9fK" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/ReactJS/project8",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "nodejs.jest.jest_package": "D:/ReactJS/project8/node_modules/react-scripts",
-    "nodejs_package_manager_path": "npm",
-    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2022.2\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/ReactJS/project8&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs.jest.jest_package&quot;: &quot;D:/ReactJS/project8/node_modules/react-scripts&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm 2022.2\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="Jest.ProfileStatus component.status on props should be in state">
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\ReactJS\project8\src\img" />
+      <recent name="D:\ReactJS\project8\src\components\Profile\ProfileInfo\ProfileData" />
+    </key>
+  </component>
+  <component name="RunManager" selected="npm.start">
     <configuration name="ProfileStatus component" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
@@ -90,8 +124,19 @@
       </test-names>
       <method v="2" />
     </configuration>
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.start" />
         <item itemvalue="Jest.ProfileStatus component.status on props should be in state" />
         <item itemvalue="Jest.ProfileStatus component" />
       </list>
@@ -115,7 +160,35 @@
       <workItem from="1663947285569" duration="1551000" />
       <workItem from="1663971910011" duration="4071000" />
       <workItem from="1664027422456" duration="5642000" />
-      <workItem from="1664186738432" duration="2969000" />
+      <workItem from="1664186738432" duration="14657000" />
+      <workItem from="1664211194301" duration="4000" />
+      <workItem from="1664273460644" duration="2691000" />
+      <workItem from="1664369434607" duration="2649000" />
+      <workItem from="1664444269242" duration="8910000" />
+      <workItem from="1664526951108" duration="7212000" />
+      <workItem from="1664557888257" duration="2831000" />
+      <workItem from="1664717789786" duration="8301000" />
+      <workItem from="1664901446887" duration="1807000" />
+      <workItem from="1664978407087" duration="3842000" />
+      <workItem from="1664987413322" duration="2721000" />
+      <workItem from="1665047764259" duration="5459000" />
+      <workItem from="1665074617308" duration="2896000" />
+      <workItem from="1665078454878" duration="2000" />
+      <workItem from="1665137573617" duration="601000" />
+      <workItem from="1665144499293" duration="6237000" />
+      <workItem from="1665318704896" duration="3244000" />
+      <workItem from="1665400597423" duration="5299000" />
+      <workItem from="1665415243364" duration="1438000" />
+      <workItem from="1665481400811" duration="2473000" />
+      <workItem from="1665676595719" duration="7013000" />
+      <workItem from="1665910284043" duration="598000" />
+      <workItem from="1666082294475" duration="4706000" />
+      <workItem from="1666172322907" duration="11078000" />
+      <workItem from="1666190051278" duration="2962000" />
+      <workItem from="1666260798043" duration="5436000" />
+      <workItem from="1666276502461" duration="4513000" />
+      <workItem from="1666335441382" duration="5732000" />
+      <workItem from="1666361092127" duration="8313000" />
     </task>
     <servers />
   </component>

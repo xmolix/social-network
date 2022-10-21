@@ -3,6 +3,7 @@ import {connect} from "react-redux";
 import {getPosts, getProfile} from "../../../redux/selectors/profileSelector";
 import {getAvatar} from "../../../redux/selectors/appSelector";
 import ProfilePosts from "./ProfilePosts";
+import {deletePost, dislikePost, likePost} from "../../../redux/reducers/profileReducer";
 
 const ProfilePostsContainer = (props) => {
     return props.profile
@@ -16,4 +17,4 @@ const mapStateToProps = (state) => ({
     defaultAvatar: getAvatar(state),
 });
 
-export default connect(mapStateToProps, {})(ProfilePostsContainer);
+export default connect(mapStateToProps, {deletePost, likePost, dislikePost})(ProfilePostsContainer);
