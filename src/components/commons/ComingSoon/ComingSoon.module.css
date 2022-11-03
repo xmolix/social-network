@@ -1,0 +1,20 @@
+.coming_soon_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    box-shadow: inset 0 0 50px white;
+    border-radius: 5px;
+    height: 100%;
+}
+
+.coming_soon {
+    color: white;
+    cursor: default;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.coming_soon::selection {
+    background-color: transparent;
+}

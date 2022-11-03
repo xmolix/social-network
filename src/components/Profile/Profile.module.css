@@ -117,6 +117,7 @@
 .post_like_count {
     display: flex;
     font-size: 18px;
+    margin-top: 5px;
 }
 
 .post_like_count span {
@@ -125,22 +126,73 @@
     text-shadow: 0 0 2px black;
 }
 
+.like_dislike {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    cursor: pointer;
+    padding: 2px;
+    transition: all .3s ease;
+}
+
+.like {
+    border: 1px solid black;
+    border-radius: 5px 0 0 5px;
+    width: 100px;
+}
+
+.dislike {
+    border: 1px solid black;
+    border-radius: 0 5px 5px 0;
+    width: 80px;
+}
+
+.gray {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.green {
+    background-color: rgba(144, 238, 144, 0.8);
+}
+
+.red {
+    background-color: rgba(240, 128, 128, 0.8);
+}
+
+.like_checkbox {
+    position: absolute;
+    width: 105px;
+    height: 29px;
+    opacity: 0;
+}
+
+.dislike_checkbox {
+    position: absolute;
+    width: 85px;
+    height: 29px;
+    opacity: 0;
+}
+
 .like_count_color_green {
     color: lightgreen;
+}
+
+.like_count_color_gray {
+    color: black;
 }
 
 .like_count_color_red {
     color: lightcoral;
 }
 
-.like_dislike_container {
-    margin-left: 10px;
-}
-
 .like_dislike_btn {
     border: none;
     cursor: pointer;
     transition: all .3s ease;
+}
+
+.like_dislike_btn:disabled {
+    background-color: lightgrey;
 }
 
 .like_btn {

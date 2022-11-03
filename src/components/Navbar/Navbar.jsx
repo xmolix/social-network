@@ -21,7 +21,7 @@ const Navbar = () => {
             <NavLink className={setActive} to={"/news"}>
                 <div className={classes.navbar_name}>News</div>
             </NavLink>
-            <NavLink className={setActive} to={"/setting"}>
+            <NavLink className={setActive} to={"/settings"}>
                 <div className={classes.navbar_name}>Settings</div>
             </NavLink>
         </div>

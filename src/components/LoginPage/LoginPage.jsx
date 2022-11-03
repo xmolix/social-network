@@ -4,7 +4,7 @@ import {Field, Form, Formik} from "formik";
 import Input from "../../formik/Input/Input";
 
 
-const LoginPage = ({initialValues, onSubmit, validationSchema, status}) => {
+const LoginPage = ({initialValues, onSubmit, validationSchema, status, captcha}) => {
     return (
         <div className={classes.login}>
             <Formik initialValues={initialValues}
@@ -37,6 +37,21 @@ const LoginPage = ({initialValues, onSubmit, validationSchema, status}) => {
                         <Field id={"rememberMe"} name={"rememberMe"} type={"checkbox"}/>
                         <div className={classes.server_status}>{status}</div>
                     </div>
+
+                    {captcha && <>
+                        <div className={classes.captcha_container}>
+                            <img className={classes.captcha_img} src={captcha} alt="Captcha"/>
+                        </div>
+                        <div className={classes.label_input}>
+                            <label htmlFor="captcha">Captcha: </label>
+                            <Field id={"captcha"} name={"captcha"}
+                                   children={(props) => <Input type={"text"}
+                                                               placeholder={"Enter the captcha..."}
+                                                               classError={"loginError"}
+                                                               {...props}/>}
+                            />
+                        </div>
+                    </>}
 
                     <button className={classes.btn_login} type={"submit"}>submit</button>
                 </Form>

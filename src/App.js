@@ -13,6 +13,7 @@ import {useEffect} from "react";
 import Loading from "./components/commons/Loading/Loading";
 import Profile from "./components/Profile/Profile";
 import store from "./redux/store";
+import ComingSoon from "./components/commons/ComingSoon/ComingSoon";
 
 const MessagesContainer = React.lazy(() => import ("./components/Messages/MessagesContainer"));
 
@@ -36,6 +37,9 @@ const App = (props) => {
                             <Route path={"/profile/:userId"} element={<Profile/>}/>
                             <Route exact path={"/messages/*"} element={<MessagesContainer/>}/>
                             <Route path={"/users"} element={<UsersComponent/>}/>
+                            <Route path={"/music"} element={<ComingSoon/>}/>
+                            <Route path={"/news"} element={<ComingSoon/>}/>
+                            <Route path={"/settings"} element={<ComingSoon/>}/>
                         </Routes>
                     </Suspense>
                 </div>

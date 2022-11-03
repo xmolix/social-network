@@ -4,7 +4,7 @@ import loading from "../../../img/loading.svg";
 
 const Loading = () => {
     return (
-        <div className={classes.container}  role={"main"}>
+        <div className={classes.container}>
             <img className={classes.loading} src={loading} alt={"learn react"}/>
         </div>
     )

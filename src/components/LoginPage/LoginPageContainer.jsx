@@ -1,7 +1,7 @@
 import React from 'react';
 import {connect} from "react-redux";
 import {login} from "../../redux/reducers/authReducer";
-import {getAuth, getMyID, getServerStatus} from "../../redux/selectors/authSelector";
+import {getAuth, getCaptchaUrl, getMyID, getServerStatus} from "../../redux/selectors/authSelector";
 import {Navigate} from "react-router-dom";
 import * as Yup from "yup";
 import LoginPage from "./LoginPage";
@@ -13,11 +13,12 @@ const LoginPageContainer = (props) => {
         email: "",
         password: "",
         rememberMe: false,
+        captcha: "",
     };
 
     const onSubmit = (values, {setSubmitting}) => {
-        let {email, password, rememberMe} = values;
-        props.login(email, password, rememberMe);
+        let {email, password, rememberMe, captcha} = values;
+        props.login(email, password, rememberMe, captcha);
         setSubmitting(false);
     }
 
@@ -33,7 +34,8 @@ const LoginPageContainer = (props) => {
             : <LoginPage initialValues={initialValues}
                          onSubmit={onSubmit}
                          validationSchema={validationSchema}
-                         status={props.serverStatus}/>
+                         status={props.serverStatus}
+                         captcha={props.captchaUrl}/>
     );
 };
 
@@ -41,6 +43,7 @@ const mapStateToProps = (state) => ({
     isAuth: getAuth(state),
     myID: getMyID(state),
     serverStatus: getServerStatus(state),
+    captchaUrl: getCaptchaUrl(state),
 });
 
 export default connect(mapStateToProps, {login})(LoginPageContainer);

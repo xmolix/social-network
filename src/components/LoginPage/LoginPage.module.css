@@ -84,3 +84,13 @@
     position: absolute;
     width: 97.5%;
 }
+
+.captcha_container {
+    display: flex;
+    justify-content: center;
+}
+
+.captcha_img {
+    border-radius: 5px;
+    width: 150px;
+}
