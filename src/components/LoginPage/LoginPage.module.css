@@ -81,6 +81,7 @@
     justify-content: end;
     color: red;
     font-weight: bold;
+    pointer-events: none;
     position: absolute;
     width: 97.5%;
 }

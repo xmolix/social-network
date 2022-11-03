@@ -2,23 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="16e46b1c-4f71-46c4-853f-68f8f8ad21f2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/commons/ComingSoon/ComingSoon.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/commons/ComingSoon/ComingSoon.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/api.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/LoginPage/LoginPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LoginPage/LoginPage.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/LoginPage/LoginPage.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LoginPage/LoginPage.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/LoginPage/LoginPageContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LoginPage/LoginPageContainer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navbar/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/Navbar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Profile/Profile.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/Profile.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Profile/ProfilePosts/ProfilePosts.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/ProfilePosts/ProfilePosts.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Profile/ProfilePosts/ProfilePostsContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/ProfilePosts/ProfilePostsContainer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/commons/Loading/Loading.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/commons/Loading/Loading.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/reducers/authReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducers/authReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/reducers/profileReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducers/profileReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/selectors/authSelector.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/selectors/authSelector.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -223,7 +208,7 @@
       <workItem from="1667381198436" duration="7743000" />
       <workItem from="1667402941847" duration="6582000" />
       <workItem from="1667468203697" duration="7767000" />
-      <workItem from="1667486062578" duration="2819000" />
+      <workItem from="1667486062578" duration="3373000" />
     </task>
     <servers />
   </component>
