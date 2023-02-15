@@ -4,6 +4,7 @@ import SendPostContainer from "./SendPost/SendPostContainer";
 import trash from "../../../img/trash.png";
 import like from "../../../img/like.svg";
 import dislike from "../../../img/dislike.svg";
+import {actions} from "../../../redux/reducers/usersReducer";
 
 const ProfilePosts = (props) => {
     const likeCountColor = (count) => {
@@ -20,31 +21,31 @@ const ProfilePosts = (props) => {
 
     const handlerLike = (id, event) => {
         if (event.target.checked) {
-            props.setLikePlusPost(id);
+            props.actions.setLikePlusPost(id);
         } else {
-            props.setLikeMinusPost(id);
+            props.actions.setLikeMinusPost(id);
         }
 
         let findInput = document.querySelectorAll(`input[name]`);
         findInput.forEach(i => {
             if (i.name == id && i.value == 2 && i.checked == true) {
                 i.checked = false;
-                props.setDislikePlusPost(id);
+                props.actions.setDislikePlusPost(id);
             }
         });
     };
     const handlerDislike = (id, event) => {
         if (event.target.checked) {
-            props.setDislikeMinusPost(id);
+            props.actions.setDislikeMinusPost(id);
         } else {
-            props.setDislikePlusPost(id);
+            props.actions.setDislikePlusPost(id);
         }
 
         let findInput = document.querySelectorAll(`input[name]`);
         findInput.forEach(i => {
             if (i.name == id && i.value == 1 && i.checked == true) {
                 i.checked = false;
-                props.setLikeMinusPost(id);
+                props.actions.setLikeMinusPost(id);
             }
         });
     };

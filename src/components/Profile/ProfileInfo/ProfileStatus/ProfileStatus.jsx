@@ -1,6 +1,7 @@
 import React, {memo} from 'react';
 import classes from "../../Profile.module.css";
 import {useEffect, useState} from "react";
+import cn from "classnames";
 
 const ProfileStatus = (props) => {
     let [editMode, setEditMode] = useState(false);
@@ -30,7 +31,7 @@ const ProfileStatus = (props) => {
     const isOwnerStatus = props.isOwner ? classes.owner_status : classes.other_user_status;
 
     return (
-        <div className={`${classes.status} ${isOwnerStatus} ${cursor} ${active}`}>
+        <div className={cn(classes.status, isOwnerStatus, cursor, active)}>
             {!editMode &&
                 <div className={classes.status_content}
                      onDoubleClick={activateEditMode}

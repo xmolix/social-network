@@ -7,7 +7,7 @@
     border: 1px solid black;
     border-radius: 5px;
     position: sticky;
-    height: 280px;
+    height: 310px;
     margin: 3px 3px 3px 0;
     top: 5px;
 }
@@ -37,4 +37,42 @@
 .active {
     background-color: white;
     box-shadow: inset 0 0 10px black;
+}
+
+.active_navbar_cs {
+    background: linear-gradient(140deg, white 85%, black 87%);
+    box-shadow: inset 0 0 10px black;
+    position: relative;
+    border: 1px solid black;
+}
+
+.active_navbar_cs::before {
+    display: flex;
+    justify-content: right;
+    width: 97%;
+    content: "C";
+    position: absolute;
+    top: 15px;
+    color: white;
+    font-weight: bold;
+    font-size: 13.5px;
+}
+
+.navbar_cs {
+    box-shadow: inset 0 0 3px black;
+    background: linear-gradient(140deg, transparent 85%, black 87%);
+    position: relative;
+    border: 1px solid white;
+}
+
+.navbar_cs::before {
+    display: flex;
+    justify-content: right;
+    width: 97%;
+    content: "C";
+    position: absolute;
+    top: 15px;
+    color: white;
+    font-weight: bold;
+    font-size: 13.5px;
 }

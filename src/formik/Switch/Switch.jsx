@@ -1,7 +1,7 @@
 import React from 'react';
-import classes from "./Toggle.module.css";
+import classes from "./Switch.module.css";
 
-const Toggle = (props) => {
+const Switch = (props) => {
     const {field, form, meta, search, setSearch, onSwitchTumbler} = props;
 
     return (
@@ -20,4 +20,4 @@ const Toggle = (props) => {
     );
 };
 
-export default Toggle;
+export default Switch;

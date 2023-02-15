@@ -1,8 +1,8 @@
+
 const ADD_MESSAGE = "messages/ADD-MESSAGE";
 
 const time = new Date().toLocaleTimeString().slice(0, -3);
-
-let initialState = {
+let initialState: InitialStateType = {
     friends: [
         {id: 1, name: "Dima"},
         {id: 2, name: "EyeDoom"},
@@ -25,11 +25,11 @@ let initialState = {
     ]
 }
 
-const messagesReducer = (state = initialState, action) => {
+const messagesReducer = (state: InitialStateType = initialState, action: any): InitialStateType => {
     switch (action.type) {
         case ADD_MESSAGE:
             let time = new Date().toLocaleTimeString().slice(0, -3);
-            let push = {id: state.myMessages.lenght + 1, message: action.setMessage, time: time};
+            let push = {id: state.myMessages.length + 1, message: action.setMessage, time: time};
             return {
                 ...state,
                 myMessages: [...state.myMessages, push],
@@ -39,6 +39,13 @@ const messagesReducer = (state = initialState, action) => {
     }
 }
 
-export const setNewMessage = (setMessage) => ({type: ADD_MESSAGE, setMessage});
+export const setNewMessage = (setMessage: string) => ({type: ADD_MESSAGE, setMessage})
 
 export default messagesReducer;
+
+export type InitialStateType = {
+    friends: { id: number, name: string }[],
+    friendMessages: { id: number, message: string, time: string }[],
+    myMessages: {id: number, message: string, time: string}[],
+}
+// type ActionType = InferActionsTypes<typeof actions>

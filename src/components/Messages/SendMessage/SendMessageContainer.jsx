@@ -1,8 +1,8 @@
 import React from 'react';
 import {connect} from "react-redux";
-import {setNewMessage} from "../../../redux/reducers/messagesReducer";
 import * as Yup from "yup";
 import SendMessage from "./SendMessage";
+import {setNewMessage} from "../../../redux/reducers/messagesReducer";
 
 const SendMessageContainer = (props) => {
     const initialValue = {message: ""};

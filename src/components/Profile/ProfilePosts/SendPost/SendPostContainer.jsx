@@ -1,7 +1,7 @@
 import {connect} from "react-redux";
-import {setNewPost} from "../../../../redux/reducers/profileReducer";
 import SendPost from "./SendPost";
 import * as Yup from "yup";
+import {actions} from "../../../../redux/reducers/profileReducer";
 
 const SendPostContainer = (props) => {
     const initialValue = {post: ""};
@@ -16,7 +16,7 @@ const SendPostContainer = (props) => {
 
     const onSubmit = (values, {resetForm}) => {
         let {post} = values;
-        props.setNewPost(post);
+        props.actions.setNewPost(post);
         resetForm();
     }
 
@@ -25,6 +25,4 @@ const SendPostContainer = (props) => {
                      validationSchema={validationSchema}/>
 }
 
-export default connect(null, {
-    setNewPost
-})(SendPostContainer);
+export default connect(null, {actions})(SendPostContainer);

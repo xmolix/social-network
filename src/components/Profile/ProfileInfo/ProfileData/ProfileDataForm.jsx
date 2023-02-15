@@ -2,9 +2,10 @@ import React, {useState} from 'react';
 import classes from "../../Profile.module.css";
 import {Field, Form, Formik} from "formik";
 import Textarea from "../../../../formik/Textarea/Textarea";
-import Toggle from "../../../../formik/Toggle/Toggle";
+import Switch from "../../../../formik/Switch/Switch";
 import Input from "../../../../formik/Input/Input";
 import * as Yup from "yup";
+import cn from "classnames";
 
 const ProfileDataForm = (
     {aboutMe, fullName, jobSearch, jobDescription, editProfile, updateProfile, contacts}
@@ -102,14 +103,14 @@ const ProfileDataForm = (
                 <div className={classes.data_search}>
                     <b className={classes.data_name}>Looking for a job: </b>
                         <Field name={"lookingForAJob"}
-                               children={(props) => <Toggle search={search} setSearch={setSearch}
+                               children={(props) => <Switch search={search} setSearch={setSearch}
                                                             onSwitchTumbler={onSwitchTumbler}
                                                             {...props}/>}
                         />
                 </div>
 
                 <div className={classes.data_description}>
-                    <b className={`${classes.data_description_name} ${classes.data_name}`}>My professional skills: </b>
+                    <b className={cn(classes.data_description_name, classes.data_name)}>My professional skills: </b>
                     <Field name={"lookingForAJobDescription"}
                            children={(props) => <Textarea placeholder={"Enter the description..."}
                                                           cols={70} rows={7}
@@ -133,9 +134,9 @@ const ProfileDataForm = (
                 </div>
 
                 {!status
-                    ? <button className={`${classes.data_edit_btn} ${classes.save}`}
+                    ? <button className={cn(classes.data_edit_btn, classes.save)}
                               type={"submit"}/>
-                    : <button className={`${classes.data_edit_btn}`}
+                    : <button className={classes.data_edit_btn}
                               type={"submit"} disabled={restart}>
                         {restart > 0
                             ? status + ". Please fixed wrong URL and try again after " + restart + " seconds"
