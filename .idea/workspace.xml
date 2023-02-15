@@ -5,51 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="16e46b1c-4f71-46c4-853f-68f8f8ad21f2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Game/Game.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Game/Game.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Game/GameElements/Board.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Game/GameElements/Square.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Game/GameElements/calculateWinners.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/PageNotFound/PageNotFound.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/PageNotFound/PageNotFound.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Users/User/User.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Users/Users.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Users/UsersPage.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Users/UsersPagination/LeftArrow.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Users/UsersPagination/RightArrow.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Users/UsersPagination/UsersPagination.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Users/UsersSearchForm/UsersSearchForm.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hoc/TestCompose.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/index.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/types/types.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/api.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Messages/MessagesContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Messages/MessagesContainer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Messages/SendMessage/SendMessageContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Messages/SendMessage/SendMessageContainer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navbar/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/Navbar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navbar/Navbar.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/Navbar.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileData/ProfileDataForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileData/ProfileDataForm.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileStatus/ProfileStatus.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileStatus/ProfileStatus.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Profile/ProfilePosts/ProfilePosts.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/ProfilePosts/ProfilePosts.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Profile/ProfilePosts/ProfilePostsContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/ProfilePosts/ProfilePostsContainer.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Profile/ProfilePosts/SendPost/SendPostContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/ProfilePosts/SendPost/SendPostContainer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Users/Users.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Users/UsersComponent.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/commons/ComingSoon/ComingSoon.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/commons/ComingSoon/ComingSoon.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/formik/Toggle/Toggle.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/formik/Switch/Switch.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/formik/Toggle/Toggle.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/formik/Switch/Switch.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hoc/withAuthRedirect.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/hoc/withAuthRedirect.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/reducers/appReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducers/appReducer.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/reducers/authReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducers/authReducer.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/reducers/messagesReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducers/messagesReducer.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/reducers/profileReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducers/profileReducer.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/reducers/usersReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducers/usersReducer.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/selectors/usersSelector.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/selectors/usersSelector.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/store.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,32 +96,6 @@
     </key>
   </component>
   <component name="RunManager" selected="Jest.success unfollow thunk">
-    <configuration name="Unnamed (1)" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/redux/tests/usersReducer.thunks.test.ts" />
-      <test-names>
-        <test-name value="" />
-      </test-names>
-      <method v="2" />
-    </configuration>
-    <configuration name="follow success" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/redux/tests/usersReducer.test.ts" />
-      <test-names>
-        <test-name value="follow success" />
-      </test-names>
-      <method v="2" />
-    </configuration>
     <configuration name="success follow thunk" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
@@ -189,6 +122,26 @@
       </test-names>
       <method v="2" />
     </configuration>
+    <configuration name="deploy" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="deploy" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="predeploy" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="predeploy" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -202,10 +155,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="npm.start" />
+        <item itemvalue="npm.deploy" />
+        <item itemvalue="npm.predeploy" />
         <item itemvalue="Jest.success unfollow thunk" />
         <item itemvalue="Jest.success follow thunk" />
-        <item itemvalue="Jest.Unnamed (1)" />
-        <item itemvalue="Jest.follow success" />
       </list>
     </recent_temporary>
   </component>
@@ -329,7 +282,7 @@
       <workItem from="1676207854848" duration="2631000" />
       <workItem from="1676303932180" duration="4792000" />
       <workItem from="1676363870278" duration="6455000" />
-      <workItem from="1676446256474" duration="660000" />
+      <workItem from="1676446256474" duration="1953000" />
     </task>
     <servers />
   </component>

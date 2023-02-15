@@ -16,7 +16,7 @@ const SendPostContainer = (props) => {
 
     const onSubmit = (values, {resetForm}) => {
         let {post} = values;
-        props.actions.setNewPost(post);
+        props.setNewPost(post);
         resetForm();
     }
 
@@ -25,4 +25,6 @@ const SendPostContainer = (props) => {
                      validationSchema={validationSchema}/>
 }
 
-export default connect(null, {actions})(SendPostContainer);
+export default connect(null, {
+    setNewPost: actions.setNewPost
+})(SendPostContainer);
