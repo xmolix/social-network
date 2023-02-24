@@ -93,26 +93,26 @@ export const actions = {
 
 export const getUsers = (usersCount: number, currentPage: number, filter: FilterType) => {
     return async (dispatch: DispatchType) => {
-        dispatch(actions.setLoadingStatus(true));
-        let data = await usersAPI.getUsers(usersCount, currentPage, filter.term, filter.friend);
+        dispatch(actions.setLoadingStatus(true))
+        let data = await usersAPI.getUsers(usersCount, currentPage, filter.term, filter.friend)
 
-        dispatch(actions.setUsers(data.items));
-        dispatch(actions.setTotalCount(data.totalCount));
+        dispatch(actions.setUsers(data.items))
+        dispatch(actions.setTotalCount(data.totalCount))
 
-        dispatch(actions.setLoadingStatus(false));
+        dispatch(actions.setLoadingStatus(false))
     }
 }
 
 export const setPage = (usersCount: number, setPage: number, filter: FilterType): ThunkType => {
     return async (dispatch) => {
-        dispatch(actions.setLoadingStatus(true));
-        dispatch(actions.setCurrentPage(setPage));
+        dispatch(actions.setLoadingStatus(true))
+        dispatch(actions.setCurrentPage(setPage))
         dispatch(actions.setFilter(filter));
-        let data = await usersAPI.getUsers(usersCount, setPage, filter.term, filter.friend);
+        let data = await usersAPI.getUsers(usersCount, setPage, filter.term, filter.friend)
 
-        dispatch(actions.setUsers(data.items));
-        dispatch(actions.setTotalCount(data.totalCount));
-        dispatch(actions.setLoadingStatus(false));
+        dispatch(actions.setUsers(data.items))
+        dispatch(actions.setTotalCount(data.totalCount))
+        dispatch(actions.setLoadingStatus(false))
     }
 }
 
@@ -137,7 +137,7 @@ const _followUnfollowFlow = async (dispatch: DispatchType,
         dispatch(actionCreator(userId))
     }
 
-    dispatch(actions.setDisabledStatus(false, userId));
+    dispatch(actions.setDisabledStatus(false, userId))
 }
 
 export default usersReducer;

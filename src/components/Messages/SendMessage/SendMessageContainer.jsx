@@ -20,8 +20,8 @@ const SendMessageContainer = (props) => {
     return (
         <SendMessage initialValue={initialValue}
                      validationSchema={validationSchema}
-                     onSubmit={onSubmit}/>
+                     onSubmit={onSubmit} />
     )
 }
 
-export default connect(null, {setNewMessage})(SendMessageContainer)
+export default connect(null, { setNewMessage })(SendMessageContainer)

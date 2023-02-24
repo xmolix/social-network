@@ -5,10 +5,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="16e46b1c-4f71-46c4-853f-68f8f8ad21f2" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/api/chat-api.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Chat/ChatPage.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Chat/ChatPage.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/reducers/chatReducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Profile/ProfilePosts/ProfilePosts.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/ProfilePosts/ProfilePosts.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Profile/ProfilePosts/ProfilePostsContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/ProfilePosts/ProfilePostsContainer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Game/Game.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Game/Game.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Game/GameElements/Board.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Game/GameElements/Board.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Game/GameElements/Square.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Game/GameElements/Square.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Game/GameElements/calculateWinners.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Game/GameElements/calculateWinners.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Messages/SendMessage/SendMessage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Messages/SendMessage/SendMessage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Messages/SendMessage/SendMessageContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Messages/SendMessage/SendMessageContainer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navbar/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/Navbar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navbar/Navbar.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/Navbar.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Profile/ProfilePosts/SendPost/SendPostContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/ProfilePosts/SendPost/SendPostContainer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Users/Users.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Users/Users.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Users/UsersPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Users/UsersPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Users/UsersSearchForm/UsersSearchForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Users/UsersSearchForm/UsersSearchForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/formik/Textarea/Textarea.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/formik/Textarea/Textarea.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/reducers/usersReducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducers/usersReducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/store.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/objects-helpers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/objects-helpers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +42,7 @@
       <list>
         <option value="CSS File" />
         <option value="TypeScript File" />
+        <option value="TypeScript JSX File" />
       </list>
     </option>
   </component>
@@ -70,7 +93,8 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/ReactJS/project8&quot;,
+    &quot;js.last.introduce.type&quot;: &quot;CONST&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/ReactJS&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -95,20 +119,7 @@
       <recent name="D:\ReactJS\project8\src\components" />
     </key>
   </component>
-  <component name="RunManager" selected="Jest.success unfollow thunk">
-    <configuration name="success follow thunk" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/redux/tests/usersReducer.thunks.test.ts" />
-      <test-names>
-        <test-name value="success follow thunk" />
-      </test-names>
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="npm.watch:css">
     <configuration name="success unfollow thunk" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
@@ -152,13 +163,23 @@
       <envs />
       <method v="2" />
     </configuration>
+    <configuration name="watch:css" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="watch:css" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.watch:css" />
         <item itemvalue="npm.start" />
         <item itemvalue="npm.deploy" />
         <item itemvalue="npm.predeploy" />
         <item itemvalue="Jest.success unfollow thunk" />
-        <item itemvalue="Jest.success follow thunk" />
       </list>
     </recent_temporary>
   </component>
@@ -282,7 +303,18 @@
       <workItem from="1676207854848" duration="2631000" />
       <workItem from="1676303932180" duration="4792000" />
       <workItem from="1676363870278" duration="6455000" />
-      <workItem from="1676446256474" duration="1953000" />
+      <workItem from="1676446256474" duration="2251000" />
+      <workItem from="1676483825679" duration="6432000" />
+      <workItem from="1676551471236" duration="10568000" />
+      <workItem from="1676624642696" duration="11853000" />
+      <workItem from="1676646851992" duration="3546000" />
+      <workItem from="1676716297742" duration="9527000" />
+      <workItem from="1676746986396" duration="1781000" />
+      <workItem from="1676801442802" duration="10107000" />
+      <workItem from="1676834355976" duration="4940000" />
+      <workItem from="1676882395864" duration="778000" />
+      <workItem from="1677164554983" duration="4840000" />
+      <workItem from="1677175504463" duration="1567000" />
     </task>
     <servers />
   </component>

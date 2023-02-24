@@ -5,6 +5,7 @@ import appReducer from "./reducers/appReducer";
 import usersReducer from "./reducers/usersReducer";
 import profileReducer from "./reducers/profileReducer";
 import messagesReducer from "./reducers/messagesReducer";
+import chatReducer from "./reducers/chatReducer";
 
 const rootReducer = combineReducers({
     app: appReducer,
@@ -12,6 +13,7 @@ const rootReducer = combineReducers({
     profile: profileReducer,
     messages: messagesReducer,
     users: usersReducer,
+    chat: chatReducer,
 })
 
 const store = legacy_createStore(rootReducer, applyMiddleware(thunkMiddleware))

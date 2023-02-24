@@ -1,67 +1,47 @@
 import React, {useState} from 'react';
-import Board from "./GameElements/Board";
 import classes from "./Game.module.css";
-import { calculateWinners } from "./GameElements/calculateWinners";
+import {Board} from "./GameElements/Board";
 
-const Game = () => {
-    const [history, setHistory] = useState({ squares: Array(9).fill(null) })
-    const [xIsNext, setXIsNext] = useState(true)
-    const [stepNumber, setStepNumber] = useState(0)
 
-    const winner = calculateWinners(history.squares)
+export const Game = () => {
+    const [history, setHistory] = useState([Array(9).fill(null)]);
+    const [currentMove, setCurrentMove] = useState(0);
 
-    const nextPlayer = xIsNext ? "X" : "O"
+    const xIsNext = currentMove % 2 === 0;
+    const currentSquares = history[currentMove];
 
-    const handleClick = (i) => {
-        let squares = history.squares.slice(0, setStepNumber(stepNumber + 1))
-
-        if (winner || squares[i]) return
-
-        squares[i] = nextPlayer
-
-        setHistory(squares.concat([
-            {squares: squares}
-        ]))
-        setStepNumber(history.squares.length)
-        setXIsNext(!xIsNext)
+    function handlePlay(nextSquares) {
+        const nextHistory = [...history.slice(0, currentMove + 1), nextSquares];
+        setHistory(nextHistory);
+        setCurrentMove(nextHistory.length - 1);
     }
 
-    let status
-    winner
-        ? status = `Winner is: ${ winner }`
-        : status = `Next player is: ${ nextPlayer }`
-
-
-    const jumpTo = (step) => {
-        debugger
-        setStepNumber(step)
-        setXIsNext((step % 2) === 0)
+    function jumpTo(nextMove) {
+        setCurrentMove(nextMove);
     }
 
-    const moves = history.squares.map((step, move) => {
-        const desc = move
-            ? `Go to move #${ move }`
-            : "Go to game start"
-
+    const moves = history.map((squares, move) => {
+        let description;
+        if (move > 0) {
+            description = 'Go to move #' + move;
+        } else {
+            description = 'Go to game start';
+        }
         return (
-            <li key={ move }>
-                <button onClick={ () => jumpTo(move)}>{ desc }</button>
+            <li key={move}>
+                <button onClick={() => jumpTo(move)}>{description}</button>
             </li>
-        )
-    })
-
+        );
+    });
 
     return (
         <div className={classes.game}>
             <div className={classes.game_board}>
-                <Board squares={ history.squares } onClick={ (i) => handleClick(i) }/>
+                <Board xIsNext={xIsNext} squares={currentSquares} onPlay={handlePlay} />
             </div>
             <div className={classes.game_info}>
-                <div>{ status }</div>
-                <ol>{ moves }</ol>
+                <ol>{moves}</ol>
             </div>
         </div>
-    );
-};
-
-export default Game;
+    )
+}

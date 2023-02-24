@@ -1,0 +1,6 @@
+.form {
+  display: flex; }
+
+.messages {
+  height: 600px;
+  overflow-y: auto; }

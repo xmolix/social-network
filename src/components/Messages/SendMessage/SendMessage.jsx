@@ -10,7 +10,8 @@ const SendMessage = ({initialValue, validationSchema, onSubmit}) => {
             <Form className={classes.message_form}>
                 <Field name={"message"}
                        children={(props) => <Textarea placeholder={"Enter the message..."}
-                                                                       {...props}/>}/>
+                                                                       {...props}/>}
+                />
                 <button className={"send_btn"} type={"submit"}>&#5169;</button>
             </Form>
         </Formik>

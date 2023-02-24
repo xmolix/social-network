@@ -1,4 +1,4 @@
-export const calculateWinners = (squeres) => {
+const calculateWinners = (squeres) => {
     const lines = [
         [0, 1, 2],
         [3, 4, 5],
@@ -18,4 +18,6 @@ export const calculateWinners = (squeres) => {
     }
 
     return null
-};
+}
+
+export default calculateWinners

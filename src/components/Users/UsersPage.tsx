@@ -5,6 +5,7 @@ import {Users} from "./Users";
 import Loading from "../commons/Loading/Loading";
 import {getUsers} from "../../redux/reducers/usersReducer";
 import {AppDispatch} from "../../redux/store";
+import {useLocation, useSearchParams} from "react-router-dom";
 
 export const UsersPage: FC = () => {
     document.title = "Social Network - Users"
@@ -16,9 +17,35 @@ export const UsersPage: FC = () => {
 
     const dispatch: AppDispatch = useDispatch()
 
+    const location = useLocation()
+    const [searchParams, setSearchParams] = useSearchParams(location.search)
+
+    const parsed: any = Object.fromEntries([...searchParams])
+
+    let actualPage = parsed.page || currentPage
+    let term = parsed.term || filter.term
+
+    let friend = parsed.friend || filter.friend
+    if (parsed.friend === false) {
+        friend = parsed.friend
+    }
+
+    const actualFilter = { friend, term }
+
     useEffect(() => {
-        void dispatch(getUsers(usersCount, currentPage, filter))
-    }, [filter, currentPage, usersCount, dispatch])
+        const term = filter.term
+        const friend = filter.friend
+
+        let urlQuery = (term === "" ? "" : `&term=${term}`)
+            + (friend === null ? "" : `&friend=${friend}`)
+            + (currentPage === 1 ? `&page=${currentPage}` : `&page=${currentPage}`)
+
+        setSearchParams(urlQuery)
+    }, [filter, currentPage])
+
+    useEffect(() => {
+        void dispatch(getUsers(usersCount, actualPage, actualFilter))
+    }, [])
 
     return (
         <>

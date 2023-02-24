@@ -1,29 +1,30 @@
-import React, {FC, Suspense, useEffect} from "react";
-import './App.css';
-import {HashRouter, Navigate, Route, Routes} from "react-router-dom";
-import Header from "./components/Header/Header";
-import Footer from "./components/Footer/Footer";
-import Navbar from "./components/Navbar/Navbar";
-import LoginPageContainer from "./components/LoginPage/LoginPageContainer";
-import {connect, Provider} from "react-redux";
-import {initializeApp} from "./redux/reducers/appReducer";
-import {getInitialize} from "./redux/selectors/appSelector";
-import {UsersPage} from "./components/Users/UsersPage";
-import Loading from "./components/commons/Loading/Loading";
-import Profile from "./components/Profile/Profile";
-import store, {AppStateType} from "./redux/store";
-import ComingSoon from "./components/commons/ComingSoon/ComingSoon";
-import PageNotFound from "./components/PageNotFound/PageNotFound";
-import Game from "./components/Game/Game";
+import React, {FC, Suspense, useEffect} from "react"
+import './App.css'
+import {BrowserRouter, HashRouter, Navigate, Route, Routes} from "react-router-dom"
+import Header from "./components/Header/Header"
+import Footer from "./components/Footer/Footer"
+import Navbar from "./components/Navbar/Navbar"
+import LoginPageContainer from "./components/LoginPage/LoginPageContainer"
+import {connect, Provider} from "react-redux"
+import {initializeApp} from "./redux/reducers/appReducer"
+import {getInitialize} from "./redux/selectors/appSelector"
+import {UsersPage} from "./components/Users/UsersPage"
+import Loading from "./components/commons/Loading/Loading"
+import Profile from "./components/Profile/Profile"
+import store, {AppStateType} from "./redux/store"
+import ComingSoon from "./components/commons/ComingSoon/ComingSoon"
+import PageNotFound from "./components/PageNotFound/PageNotFound"
+import {Game} from "./components/Game/Game";
 
-const MessagesContainer = React.lazy(() => import ("./components/Messages/MessagesContainer"));
+const MessagesContainer = React.lazy(() => import ("./components/Messages/MessagesContainer"))
+const ChatPage = React.lazy(() => import ("./pages/Chat/ChatPage"))
 
 const App: FC<MapPropsType & DispatchPropsType> = (props) => {
     useEffect(() => {
         props.initializeApp();
     }, [props.initialize]);
 
-    if (!props.initialize) return <Loading/>;
+    if (!props.initialize) return <Loading/>
 
     return (
         <>
@@ -38,6 +39,7 @@ const App: FC<MapPropsType & DispatchPropsType> = (props) => {
                             <Route path={ "/profile/*" } element={ <Profile /> } />
                             <Route path={ "/profile/:userId" } element={ <Profile /> } />
                             <Route path={ "/messages/*" } element={ <MessagesContainer /> } />
+                            <Route path={ "/chat" } element={ <ChatPage /> } />
                             <Route path={ "/users" } element={ <UsersPage /> } />
                             <Route path={ "/game" } element={ <Game />} />
                             <Route path={ "/music" } element={ <ComingSoon /> } />
@@ -66,8 +68,8 @@ const SocialNetworkApp: FC = () => {
                 <AppContainer />
             </Provider>
         </HashRouter>
-    );
-};
+    )
+}
 
 export default SocialNetworkApp;
 

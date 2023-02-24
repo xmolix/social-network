@@ -30,5 +30,5 @@ export const Users: FC<UsersType> = memo(({ usersCount, currentPage, filter }) =
 export type UsersType = {
     usersCount: number,
     currentPage: number,
-    filter: FilterType
+    filter: FilterType,
 }

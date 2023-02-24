@@ -1,8 +1,10 @@
 import classes from "./Textarea.module.css";
 import formikStyle from "../formik.module.css";
+import {FieldProps} from "formik";
+import {FC} from "react";
 
-const Textarea = (props) => {
-    const {field, form, meta, placeholder, cols = 30, rows = 5} = props;
+const Textarea: FC<FieldProps & FormikTextareaType> = (props) => {
+    const {field, form, meta, placeholder, cols = 30, rows = 5} = props
 
     return (
         <div className={formikStyle.field}>
@@ -14,4 +16,10 @@ const Textarea = (props) => {
     )
 }
 
-export default Textarea;
+export default Textarea
+
+export type FormikTextareaType = {
+    placeholder: string,
+    cols?: number,
+    rows?: number,
+}

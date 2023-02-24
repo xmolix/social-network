@@ -1,6 +1,6 @@
-import React, {FC, memo} from 'react';
-import {Field, Form, Formik} from "formik";
-import {FilterFriendType, FilterType} from "../../../redux/reducers/usersReducer";
+import React, {FC, memo} from 'react'
+import {Field, Form, Formik} from "formik"
+import {FilterFriendType, FilterType} from "../../../redux/reducers/usersReducer"
 
 export type PropsType = {
     onFilterChanged: (filter: FilterType) => void
@@ -15,7 +15,7 @@ const UsersSearchForm: FC<PropsType> = memo(({ onFilterChanged,  friend }) => {
     }
 
     return (
-        <Formik initialValues={{term: "", friend: friend}} onSubmit={onSubmit}>
+        <Formik initialValues={{term: "", friend: friend}} onSubmit={onSubmit} enableReinitialize={true}>
             <Form>
                 <Field type={"text"} name={"term"} />
                 <Field name={"friend"} as={"select"}>

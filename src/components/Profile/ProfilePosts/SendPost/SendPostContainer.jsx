@@ -4,9 +4,9 @@ import * as Yup from "yup";
 import {actions} from "../../../../redux/reducers/profileReducer";
 
 const SendPostContainer = (props) => {
-    const initialValue = {post: ""};
+    const initialValue = {post: ""}
 
-    const maxLength = 300;
+    const maxLength = 300
 
     const validationSchema = Yup.object({
        post: Yup.string()
