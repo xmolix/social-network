@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/271.356d167e.chunk.css","mappings":"AAAA,sBACE,YAAe,CAEjB,0BACE,YAAa,CACb,eAAkB","sources":["pages/Chat/ChatPage.module.css"],"sourcesContent":[".form {\n  display: flex; }\n\n.messages {\n  height: 600px;\n  overflow-y: auto; }\n"],"names":[],"sourceRoot":""}
